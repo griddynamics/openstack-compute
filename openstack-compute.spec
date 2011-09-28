@@ -19,16 +19,14 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %{!?python_sitearch: %global python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
 
-%define mod_name openstack-compute
-
-Name:           %{mod_name}
+Name:           openstack-compute
 Release:        1
 Version:        2.0a1
 Url:            http://www.openstack.org
 Summary:        Python bindings to the OS API
 License:        BSD License
 Group:          Development/Languages/Python
-Source:         %{mod_name}-%{version}.tar.bz2
+Source:         %{name}-%{version}.tar.bz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildRequires:  python-devel python-setuptools
 BuildArch:      noarch
@@ -38,7 +36,7 @@ Python bindings to the OS API
 
 
 %prep
-%setup -q -n %{mod_name}-%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 export CFLAGS="%{optflags}"
