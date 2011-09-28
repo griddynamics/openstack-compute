@@ -1,1 +1,1 @@
-tar.bz: @name@-@version@
+tar.gz: openstack-compute 

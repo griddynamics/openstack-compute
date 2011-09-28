@@ -26,7 +26,7 @@ Url:            http://www.openstack.org
 Summary:        Python bindings to the OS API
 License:        BSD License
 Group:          Development/Languages/Python
-Source:         %{name}-%{version}.tar.bz
+Source:         %{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildRequires:  python-devel python-setuptools
 BuildArch:      noarch
