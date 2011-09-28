@@ -51,5 +51,6 @@ rm -rf %{buildroot}
 
 %files -f %{name}.files
 %defattr(-,root,root,-)
+%{python_sitelib}/openstack/compute
 
 %changelog
