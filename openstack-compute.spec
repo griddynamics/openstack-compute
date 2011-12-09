@@ -20,6 +20,7 @@
 %{!?python_sitearch: %global python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
 
 Name:           openstack-compute
+Epoch:          1
 Release:        1
 Version:        2.0a1
 Url:            http://www.openstack.org
